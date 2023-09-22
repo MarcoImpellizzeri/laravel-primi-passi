@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'name' => 'Mario',
+        'surname' => 'Rossi',
+    ];
+
+    $age = '27';
+
+    return view('home', $data, compact('age'));
 });

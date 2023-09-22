@@ -19,8 +19,10 @@
         - Facciamo quindi sì che la rotta / visualizzi home.blade.php
         - Inizialmente stampiamo un Hello World, poi passiamo dei dati alla view in modo da visualizzarli dinamicamente con Blade.
     --}}
-
-    
+    <div class="container py-5 text-center">
+        <h1>HELLO WORLD</h1>
+        <h2>Ciao {{ $name }} {{ $surname }}, vedo che hai {{ $age }} anni.</h2>
+    </div>
 </body>
 
 </html>
